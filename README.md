@@ -17,7 +17,7 @@ npm run build
 
 ## Personalizar
 
-Cambia tus datos en:
+Cambiar la información en:
 
 - `src/components/Contact.jsx`
 - `src/App.jsx`
@@ -26,7 +26,4 @@ Cambia tus datos en:
 
 ## Deploy
 
-Puedes subirlo gratis a:
-
-- Vercel
-- Netlify
+En mi caso utilicé Vercel como plataforma para desplegar, pero se puede usar también netlify, por ejemplo.
