@@ -329,8 +329,7 @@ button {
   height: 220px;
   border-radius: 999px;
   overflow: hidden;
-  border: 1.5px solid var(--border);
-  border: 2px solid rgba(90, 227, 255, 0.28);
+  border: 2px solid var(--border);
   background:
     radial-gradient(circle at top, rgba(123, 92, 255, 0.28), transparent 55%),
     rgba(255, 255, 255, 0.03);
@@ -340,7 +339,6 @@ button {
   box-shadow:
     0 0 40px rgba(0, 200, 255, 0.08),
     inset 0 0 25px rgba(255, 255, 255, 0.02);
-    
 }
 
 .hero-avatar span {
@@ -419,7 +417,7 @@ button {
 
 .hero-contact-links a {
   text-decoration: none;
-  color: var(--text-primary);
+  color: var(--text);
   border: 1px solid var(--border);
   background: var(--card);
   padding: 0.8rem 1rem;
@@ -487,7 +485,7 @@ button {
   background: var(--card);
   border: 1px solid var(--border);
 
-  color: var(--text-primary);
+  color: var(--text);
 }
 
 .contact-item-label {
@@ -515,9 +513,31 @@ button {
 }
 
 @media (max-width: 768px) {
-  .hero-avatar {
-    width: 110px;
-    height: 110px;
+  .hero-title-horizontal {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+    max-width: 100%;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-mini-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-contact-links {
+    flex-wrap: wrap;
+    gap: 0.6rem;
   }
 }
 
@@ -605,4 +625,89 @@ div {
     color 0.25s ease,
     border-color 0.25s ease,
     box-shadow 0.25s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
+
+  .hero-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .hero-avatar-wrap {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hero-main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-title-horizontal {
+    max-width: 100%;
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-mini-cards {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .mini-card {
+    width: 100%;
+  }
+
+  .hero-contact-links {
+    gap: 0.6rem;
+  }
+
+  .hero-contact-links a {
+    padding: 0.72rem 0.9rem;
+  }
+
+  .section {
+    margin-top: 3.2rem;
+  }
+
+  .page-content {
+    padding: 2rem 0 3rem;
+  }
 }
