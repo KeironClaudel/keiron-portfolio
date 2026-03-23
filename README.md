@@ -26,4 +26,6 @@ Cambiar la información en:
 
 ## Deploy
 
-En mi caso utilicé Vercel como plataforma para desplegar, pero se puede usar también netlify, por ejemplo.
+En mi caso utilicé Vercel como plataforma para desplegar, pero se puede usar también Netlify, por ejemplo.
+
+URL a mi portafolio: https://tu-portfolio.vercel.app
