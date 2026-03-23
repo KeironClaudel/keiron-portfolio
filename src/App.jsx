@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import { translations } from "./i18n";
+import BackToTop from "./components/BackToTop";
 
 function getInitialLanguage() {
   const savedLang = localStorage.getItem("lang");
@@ -112,6 +113,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <BackToTop />
     </div>
   );
 }
