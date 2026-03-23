@@ -1,0 +1,63 @@
+import { Github, Linkedin, LinkedinIcon, Mail, MailIcon } from "lucide-react";
+
+export default function Hero({ t }) {
+  return (
+    <section className="hero section">
+      <div className="hero-horizontal">
+        <div className="hero-avatar-wrap">
+          <div className="hero-avatar">
+            <img src="/profile.png" alt="Keiron" />
+          </div>
+        </div>
+
+        <div className="hero-main">
+          <h3 className="hero-title ">
+            <h1>{t.heroTitle}</h1>
+          </h3>
+
+          <h1 className="hero-title hero-title-horizontal">
+            Keiron Quesada Claudel
+          </h1>
+
+          <p className="hero-description">
+            <p>{t.heroDesc}</p>
+          </p>
+
+          <div className="hero-mini-cards">
+            <article className="mini-card">
+              <p className="mini-card-label">{t.focus}</p>
+              <h3>Backend first</h3>
+              <p>{t.focusDesc}</p>
+            </article>
+
+            <article className="mini-card">
+              <p className="mini-card-label">{t.status}</p>
+              <h3>{t.statusTitle}</h3>
+              <p>{t.statusDesc}</p>
+            </article>
+          </div>
+
+          <div className="hero-contact-links">
+            <a
+              href="https://github.com/KeironClaudel/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Github size={16} /> GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/keironquesadaclaudel/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedinIcon size={16} /> LinkdIn
+            </a>
+            <a href="mailto:keironqc@gmail.com">
+              <MailIcon size={16} /> Gmail
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
