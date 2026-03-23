@@ -1,4 +1,13 @@
-import { Github, Linkedin, LinkedinIcon, Mail, MailIcon } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  LinkedinIcon,
+  Mail,
+  MailIcon,
+  ChevronDown,
+  FileText,
+} from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Hero({ t }) {
   return (
@@ -55,6 +64,35 @@ export default function Hero({ t }) {
             <a href="mailto:keironqc@gmail.com">
               <MailIcon size={16} /> Gmail
             </a>
+
+            <details className="cv-dropdown">
+              <summary className="cv-toggle">
+                <span className="cv-toggle-content">
+                  <FileText size={16} />
+                  {t.downloadCv}
+                  <ChevronDown size={16} className="cv-chevron" />
+                </span>
+              </summary>
+
+              <div className="cv-menu">
+                <a
+                  href="/KeironQuesadaClaudel_ESP.pdf"
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t.cvSpanish}
+                </a>
+                <a
+                  href="/KeironQuesadaClaudel_EN.pdf"
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t.cvEnglish}
+                </a>
+              </div>
+            </details>
           </div>
         </div>
       </div>

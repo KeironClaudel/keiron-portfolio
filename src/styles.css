@@ -759,3 +759,99 @@ div {
 .back-to-top:active {
   transform: scale(0.97);
 }
+
+.cv-dropdown {
+  position: relative;
+}
+
+.cv-dropdown summary {
+  list-style: none;
+}
+
+.cv-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.cv-toggle {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.cv-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cv-toggle-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-menu {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 0;
+  min-width: 210px;
+  padding: 0.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  display: grid;
+  gap: 0.35rem;
+  z-index: 50;
+}
+
+.cv-menu a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cv-menu a:hover {
+  background: var(--bg-soft);
+  color: var(--accent);
+}
+
+.cv-chevron {
+  transition: transform 0.2s ease;
+}
+
+.cv-dropdown[open] .cv-chevron {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .cv-dropdown {
+    width: 100%;
+  }
+
+  .cv-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cv-menu {
+    position: static;
+    margin-top: 0.5rem;
+    width: 100%;
+    min-width: 0;
+  }
+}

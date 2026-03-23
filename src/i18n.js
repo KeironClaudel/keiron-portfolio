@@ -49,6 +49,10 @@ export const translations = {
     email: "Correo",
     github: "GitHub",
     linkedin: "LinkedIn",
+
+    downloadCv: "Descargar CV",
+    cvSpanish: "CV en Español",
+    cvEnglish: "CV en Inglés",
   },
 
   en: {
@@ -101,5 +105,9 @@ export const translations = {
     email: "Email",
     github: "GitHub",
     linkedin: "LinkedIn",
+
+    downloadCv: "Download CV",
+    cvSpanish: "Spanish CV",
+    cvEnglish: "English CV",
   },
 };
