@@ -8,9 +8,10 @@ export default function Skills({ skills, t }) {
 
       <div className="skills-grid">
         {skills.map((skill) => (
-          <article key={skill} className="card skill-card">
-            <h3>{skill}</h3>
-          </article>
+          <div key={skill.name} className="skill-card">
+            <span className="skill-icon">{skill.icon}</span>
+            <span>{skill.name}</span>
+          </div>
         ))}
       </div>
     </section>

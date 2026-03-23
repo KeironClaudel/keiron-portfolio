@@ -855,3 +855,25 @@ div {
     min-width: 0;
   }
 }
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--text);
+}
+
+.skill-icon svg {
+  color: var(--text);
+}
+
+.skill-card:hover .skill-icon {
+  color: var(--accent);
+}

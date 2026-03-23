@@ -9,6 +9,14 @@ import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import { translations } from "./i18n";
 import BackToTop from "./components/BackToTop";
+import { SiDotnet, SiGit } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { DiMsqlServer } from "react-icons/di";
+
+import { FaDatabase } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { TbApi } from "react-icons/tb";
+import { HiOutlineCube } from "react-icons/hi2";
 
 function getInitialLanguage() {
   const savedLang = localStorage.getItem("lang");
@@ -79,14 +87,38 @@ export default function App() {
 
   const skills = useMemo(
     () => [
-      ".NET / ASP.NET Core",
-      "C#",
-      "Entity Framework Core",
-      "SQL Server / SQL",
-      "REST APIs",
-      "Clean Architecture",
-      "Git / GitHub",
-      "Data Analysis",
+      {
+        name: ".NET / ASP.NET Core",
+        icon: <SiDotnet />,
+      },
+      {
+        name: "C#",
+        icon: <TbBrandCSharp />,
+      },
+      {
+        name: "Entity Framework Core",
+        icon: <FaDatabase />,
+      },
+      {
+        name: "SQL Server / SQL",
+        icon: <DiMsqlServer />,
+      },
+      {
+        name: "REST APIs",
+        icon: <TbApi />,
+      },
+      {
+        name: "Clean Architecture",
+        icon: <HiOutlineCube />,
+      },
+      {
+        name: "Git / GitHub",
+        icon: <SiGit />,
+      },
+      {
+        name: "Data Analysis",
+        icon: <LuBrainCircuit />,
+      },
     ],
     [],
   );
