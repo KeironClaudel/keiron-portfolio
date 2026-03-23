@@ -106,8 +106,8 @@ export const translations = {
     github: "GitHub",
     linkedin: "LinkedIn",
 
-    downloadCv: "Download CV",
-    cvSpanish: "Spanish CV",
-    cvEnglish: "English CV",
+    downloadCv: "Download resume",
+    cvSpanish: "Resume (Spanish)",
+    cvEnglish: "Resume (English)",
   },
 };
