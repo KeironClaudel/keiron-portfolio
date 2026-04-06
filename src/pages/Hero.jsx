@@ -20,17 +20,13 @@ export default function Hero({ t }) {
         </div>
 
         <div className="hero-main">
-          <h3 className="hero-title ">
-            <h1>{t.heroTitle}</h1>
-          </h3>
+          <p className="hero-title">{t.heroTitle}</p>
 
           <h1 className="hero-title hero-title-horizontal">
             Keiron Quesada Claudel
           </h1>
 
-          <p className="hero-description">
-            <p>{t.heroDesc}</p>
-          </p>
+          <p className="hero-description">{t.heroDesc}</p>
 
           <div className="hero-mini-cards">
             <article className="mini-card">

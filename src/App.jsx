@@ -1,14 +1,14 @@
 import { useMemo } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Header from "./pages/Header";
+import Hero from "./pages/Hero";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 import { useState, useEffect } from "react";
 import { translations } from "./i18n";
-import BackToTop from "./components/BackToTop";
+import BackToTop from "./pages/BackToTop";
 import { SiDotnet, SiGit } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { DiMsqlServer } from "react-icons/di";
@@ -17,6 +17,7 @@ import { FaDatabase } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { TbApi } from "react-icons/tb";
 import { HiOutlineCube } from "react-icons/hi2";
+import { FaReact } from "react-icons/fa";
 
 function getInitialLanguage() {
   const savedLang = localStorage.getItem("lang");
@@ -72,13 +73,14 @@ export default function App() {
       {
         title: "CloudDocs API",
         description: t.projectCloudDocs,
-        githubUrl: "https://github.com/KeironClaudel/CloudDocs",
+        backendUrl: "https://github.com/KeironClaudel/CloudDocs",
+        frontendUrl: "https://github.com/KeironClaudel/clouddocs-frontend",
         liveUrl: "#",
       },
       {
         title: "SmartReports API",
         description: t.projectSmartReports,
-        githubUrl: "https://github.com/KeironClaudel/SmartReports",
+        backendUrl: "https://github.com/KeironClaudel/SmartReports",
         liveUrl: "#",
       },
     ],
@@ -88,36 +90,26 @@ export default function App() {
   const skills = useMemo(
     () => [
       {
-        name: ".NET / ASP.NET Core",
-        icon: <SiDotnet />,
+        category: "Backend",
+        items: [
+          { name: ".NET / ASP.NET Core", icon: <HiOutlineCube /> },
+          { name: "C#", icon: <TbBrandCSharp /> },
+          { name: "Entity Framework Core", icon: <FaDatabase /> },
+          { name: "SQL Server / SQL", icon: <DiMsqlServer /> },
+          { name: "REST APIs", icon: <TbApi /> },
+          { name: "Clean Architecture", icon: <HiOutlineCube /> },
+        ],
       },
       {
-        name: "C#",
-        icon: <TbBrandCSharp />,
+        category: "Frontend",
+        items: [{ name: "React (Basic)", icon: <FaReact /> }],
       },
       {
-        name: "Entity Framework Core",
-        icon: <FaDatabase />,
-      },
-      {
-        name: "SQL Server / SQL",
-        icon: <DiMsqlServer />,
-      },
-      {
-        name: "REST APIs",
-        icon: <TbApi />,
-      },
-      {
-        name: "Clean Architecture",
-        icon: <HiOutlineCube />,
-      },
-      {
-        name: "Git / GitHub",
-        icon: <SiGit />,
-      },
-      {
-        name: "Data Analysis",
-        icon: <LuBrainCircuit />,
+        category: "Tools",
+        items: [
+          { name: "Git / GitHub", icon: <SiGit /> },
+          { name: "Data Analysis", icon: <LuBrainCircuit /> },
+        ],
       },
     ],
     [],

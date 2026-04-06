@@ -38,10 +38,17 @@ export const translations = {
 
     projectCardTitle: "Proyecto",
 
-    projectCloudDocs:
-      "API Rest para gestión documental con autenticación JWT, control por roles y versionado de documentos.",
-    projectSmartReports:
-      "API Rest para análisis de ventas, detección de tendencias e información empresarial automatizada",
+    projectCloudDocs: [
+      "Backend para gestión documental enfocado en resolver problemas de organización, seguridad y trazabilidad de archivos dentro de una empresa.",
+      "Implementa autenticación JWT, control por roles, versionado de documentos y auditoría para centralizar el acceso, mantener historial de cambios y reforzar la seguridad.",
+    ],
+    projectSmartReports: [
+      "API REST en ASP.NET Core orientada al análisis de ventas y transformación de datos en información útil para negocio.",
+      "Proporciona métricas para dashboards, desglose por categorías, detección de tendencias e insights automáticos para apoyar la toma de decisiones.",
+    ],
+
+    projectBackend: "Backend",
+    projectFrontend: "Frontend",
 
     contact: "Contacto",
     talk: "Enlaces a algunas de mis redes:",
@@ -88,16 +95,24 @@ export const translations = {
 
     skillsTitle: "Skills",
     skillsDesc: "Stack",
-
+    projectLabel: "Proyecto",
+    projectLabel: "Project",
     projectTitle: "Projects",
     projectDesc: "Some personal projects I developed",
 
     projectCardTitle: "Project",
 
-    projectCloudDocs:
-      "A robust document management system (DMS) built with .NET 8, following Clean Architecture, designed to handle secure document storage, versioning, and access control in enterprise environments.",
-    projectSmartReports:
-      "ASP.NET Core REST API for sales analytics, providing dashboard data, category breakdowns, trend detection, and automated business insights.",
+    projectCloudDocs: [
+      "Backend for document management focused on solving file organization, security, and traceability challenges within a company.",
+      "It implements JWT authentication, role-based access control, document versioning, and audit logging to centralize access, preserve change history, and strengthen security.",
+    ],
+    projectSmartReports: [
+      "ASP.NET Core REST API focused on sales analytics and transforming raw data into useful business information.",
+      "It provides dashboard metrics, category breakdowns, trend detection, and automated insights to support decision-making.",
+    ],
+
+    projectBackend: "Backend",
+    projectFrontend: "Frontend",
 
     contact: "Contact",
     talk: "My social network:",
