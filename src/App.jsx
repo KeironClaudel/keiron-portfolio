@@ -80,12 +80,6 @@ export default function App() {
           user: "demo@clouddocs.com / Demo1234!",
         },
       },
-      {
-        title: "SmartReports API",
-        description: t.projectSmartReports,
-        backendUrl: "https://github.com/KeironClaudel/SmartReports",
-        liveUrl: "#",
-      },
     ],
     [lang],
   );
