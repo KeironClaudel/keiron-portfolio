@@ -60,6 +60,12 @@ export const translations = {
     downloadCv: "Descargar CV",
     cvSpanish: "CV en Español",
     cvEnglish: "CV en Inglés",
+    projectLabel: "Proyecto",
+    projectBackend: "Repo Backend",
+    projectFrontend: "Repo Frontend",
+    projectDemo: "Demo",
+    demoAdmin: "Admin:",
+    demoUser: "Usuario demo:",
   },
 
   en: {
@@ -124,5 +130,11 @@ export const translations = {
     downloadCv: "Download resume",
     cvSpanish: "Resume (Spanish)",
     cvEnglish: "Resume (English)",
+    projectLabel: "Project",
+    projectBackend: "Backend Repo",
+    projectFrontend: "Frontend Repo",
+    projectDemo: "Live Demo",
+    demoAdmin: "Admin:",
+    demoUser: "Demo user:",
   },
 };

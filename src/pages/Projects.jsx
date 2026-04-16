@@ -35,6 +35,27 @@ export default function Projects({ projects, t }) {
                 </a>
               )}
             </div>
+
+            {project.demoCredentials &&
+              project.liveUrl &&
+              project.liveUrl !== "#" && (
+                <div className="project-demo-box">
+                  <div className="project-demo-credentials">
+                    <span className="demo-label">{t.demoUser}</span>
+                    <span className="demo-value">
+                      {project.demoCredentials.user}
+                    </span>
+                  </div>
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-demo-button"
+                  >
+                    {t.projectDemo}
+                  </a>
+                </div>
+              )}
           </article>
         ))}
       </div>

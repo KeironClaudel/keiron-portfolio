@@ -75,7 +75,10 @@ export default function App() {
         description: t.projectCloudDocs,
         backendUrl: "https://github.com/KeironClaudel/CloudDocs",
         frontendUrl: "https://github.com/KeironClaudel/clouddocs-frontend",
-        liveUrl: "#",
+        liveUrl: "https://clouddocs-frontend.vercel.app/login",
+        demoCredentials: {
+          user: "demo@clouddocs.com / Demo1234!",
+        },
       },
       {
         title: "SmartReports API",
