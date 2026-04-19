@@ -1,6 +1,12 @@
 # Keiron Portfolio
 
-Portafolio personal hecho con React + Vite.
+Personal portfolio built with React + Vite.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
 
 ## Ejecutar en local
 
@@ -15,17 +21,16 @@ npm run dev
 npm run build
 ```
 
-## Personalizar
+## Customize
 
-Cambiar la información en:
+Update content in
 
 - `src/components/Contact.jsx`
 - `src/App.jsx`
 - `src/components/Hero.jsx`
 - `src/components/About.jsx`
 
-## Deploy
+Deployment
 
-En mi caso utilicé Vercel como plataforma para desplegar, pero se puede usar también Netlify, por ejemplo.
-
-URL a mi portafolio: https://tu-portfolio.vercel.app
+Project was deployed using the Vercel platform.
+Portfolio URL: (https://keiron-portfolio.vercel.app)
