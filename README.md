@@ -8,7 +8,7 @@ Personal portfolio built with React + Vite.
 npm install
 npm run dev
 
-## Ejecutar en local
+## Run locally
 
 ```bash
 npm install
