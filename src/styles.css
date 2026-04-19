@@ -900,6 +900,50 @@ div {
 }
 
 /* =========================
+   TECHNOLOGY CHIPS
+   ========================= */
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+/* Chip estilo burbuja */
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text);
+
+  transition: all 0.2s ease;
+}
+
+.tech-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Icono dentro del chip */
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* =========================
    RESPONSIVE
    ========================= */
 

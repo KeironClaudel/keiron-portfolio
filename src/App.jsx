@@ -12,7 +12,7 @@ import BackToTop from "./pages/BackToTop";
 import { SiDotnet, SiGit } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { DiMsqlServer } from "react-icons/di";
-
+import { SiDocker, SiVercel } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { TbApi } from "react-icons/tb";
@@ -79,7 +79,27 @@ export default function App() {
         demoCredentials: {
           user: "demo@clouddocs.com / Demo1234!",
         },
+        technologies: {
+          backend: [
+            { name: ".NET 8", icon: <HiOutlineCube /> },
+            { name: "C#", icon: <TbBrandCSharp /> },
+            { name: "Clean Architecture", icon: <HiOutlineCube /> },
+            { name: "PostgreSQL", icon: <FaDatabase /> },
+            { name: "Git", icon: <SiGit /> },
+          ],
+          frontend: [
+            { name: "React", icon: <FaReact /> },
+            { name: "JavaScript", icon: <TbApi /> },
+            { name: "Tailwind", icon: <HiOutlineCube /> },
+            { name: "HTML5", icon: <HiOutlineCube /> },
+          ],
+          deployment: [
+            { name: "Render (Docker)", icon: <SiDocker /> },
+            { name: "Vercel", icon: <HiOutlineCube /> },
+          ],
+        },
       },
+      // Next project would go here
     ],
     [lang],
   );

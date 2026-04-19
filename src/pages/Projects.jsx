@@ -1,7 +1,7 @@
 /**
  * Renders the projects section of the portfolio.
- * Each project is displayed as a horizontal card with
- * description on the left and actions on the right.
+ * Each project is displayed as a rectangular card with
+ * description, technologies, repository links and demo access.
  */
 export default function Projects({ projects, t }) {
   return (
@@ -20,7 +20,6 @@ export default function Projects({ projects, t }) {
 
           return (
             <article key={project.title} className="card project-card">
-              {/* Left side: title + description */}
               <div className="project-card-content">
                 <span className="panel-label">{t.projectLabel}</span>
                 <h3>{project.title}</h3>
@@ -32,9 +31,71 @@ export default function Projects({ projects, t }) {
                 ) : (
                   <p>{project.description}</p>
                 )}
+
+                {project.technologies && (
+                  <div className="project-tech-groups">
+                    {project.technologies.backend?.length > 0 && (
+                      <div className="project-tech-group">
+                        <h4 className="tech-group-title">
+                          {t.projectBackendStack}
+                        </h4>
+
+                        <div className="project-tech-stack">
+                          {project.technologies.backend.map((tech, index) => (
+                            <div key={`backend-${index}`} className="tech-chip">
+                              <span className="tech-icon">{tech.icon}</span>
+                              <span>{tech.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {project.technologies.frontend?.length > 0 && (
+                      <div className="project-tech-group">
+                        <h4 className="tech-group-title">
+                          {t.projectFrontendStack}
+                        </h4>
+
+                        <div className="project-tech-stack">
+                          {project.technologies.frontend.map((tech, index) => (
+                            <div
+                              key={`frontend-${index}`}
+                              className="tech-chip"
+                            >
+                              <span className="tech-icon">{tech.icon}</span>
+                              <span>{tech.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {project.technologies.deployment?.length > 0 && (
+                      <div className="project-tech-group">
+                        <h4 className="tech-group-title">
+                          {t.projectDeploymentStack}
+                        </h4>
+
+                        <div className="project-tech-stack">
+                          {project.technologies.deployment.map(
+                            (tech, index) => (
+                              <div
+                                key={`deploy-${index}`}
+                                className="tech-chip"
+                              >
+                                <span className="tech-icon">{tech.icon}</span>
+                                <span>{tech.name}</span>
+                              </div>
+                            ),
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
-              {/* Right side: repo links + demo access */}
               <div className="project-card-actions">
                 <div className="project-links">
                   {project.backendUrl && (

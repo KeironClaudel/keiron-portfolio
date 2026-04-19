@@ -39,12 +39,11 @@ export const translations = {
     projectCardTitle: "Proyecto",
 
     projectCloudDocs: [
-      "Backend para gestión documental enfocado en resolver problemas de organización, seguridad y trazabilidad de archivos dentro de una empresa.",
-      "Implementa autenticación JWT, control por roles, versionado de documentos y auditoría para centralizar el acceso, mantener historial de cambios y reforzar la seguridad.",
-    ],
-    projectSmartReports: [
-      "API REST en ASP.NET Core orientada al análisis de ventas y transformación de datos en información útil para negocio.",
-      "Proporciona métricas para dashboards, desglose por categorías, detección de tendencias e insights automáticos para apoyar la toma de decisiones.",
+      "Muchas empresas gestionan documentos de forma desorganizada, lo que dificulta el control de acceso, la trazabilidad de cambios y la seguridad de la información.",
+
+      "CloudDocs resuelve este problema mediante un sistema centralizado que permite almacenar, versionar y controlar documentos con autenticación JWT y permisos por roles, garantizando acceso seguro y auditable.",
+
+      "Esto mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
     ],
 
     projectBackend: "Backend",
@@ -66,6 +65,9 @@ export const translations = {
     projectDemo: "Demo",
     demoAdmin: "Admin:",
     demoUser: "Usuario demo:",
+    projectBackendStack: "Backend",
+    projectFrontendStack: "Frontend",
+    projectDeploymentStack: "Deploy",
   },
 
   en: {
@@ -109,12 +111,11 @@ export const translations = {
     projectCardTitle: "Project",
 
     projectCloudDocs: [
-      "Backend for document management focused on solving file organization, security, and traceability challenges within a company.",
-      "It implements JWT authentication, role-based access control, document versioning, and audit logging to centralize access, preserve change history, and strengthen security.",
-    ],
-    projectSmartReports: [
-      "ASP.NET Core REST API focused on sales analytics and transforming raw data into useful business information.",
-      "It provides dashboard metrics, category breakdowns, trend detection, and automated insights to support decision-making.",
+      "Many companies manage documents in a disorganized way, making it difficult to control access, track changes, and ensure data security.",
+
+      "CloudDocs solves this by providing a centralized system that allows document storage, versioning, and control using JWT authentication and role-based permissions, ensuring secure and auditable access.",
+
+      "This improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
     ],
 
     projectBackend: "Backend",
@@ -136,5 +137,8 @@ export const translations = {
     projectDemo: "Live Demo",
     demoAdmin: "Admin:",
     demoUser: "Demo user:",
+    projectBackendStack: "Backend",
+    projectFrontendStack: "Frontend",
+    projectDeploymentStack: "Deployment",
   },
 };
