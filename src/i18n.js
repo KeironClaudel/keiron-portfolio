@@ -28,7 +28,7 @@ export const translations = {
     aboutBodySecond:
       "Mi enfoque se basa en el desarrollo backend con .NET, disfruto trabajar en lógica de negocio, diseño de endpoints, acceso a datos y organización del código para que sea fácil de mantener.",
     aboutBodyThird:
-      "Dispuesto a aprender nuevas tecnologías para mejorar mi perfil laboral y cumplir con los objetivos que se propongan.",
+      "Dispuesto a aprender nuevas tecnologías para mejorar mi perfil laboral y cumplir con los objetivos que se propongan, actualmente aprendiendo sobre desarrollo frontend para ampliar mis habilidades.",
 
     skillsTitle: "Habilidades",
     skillsDesc: "Tecnologías principales",
