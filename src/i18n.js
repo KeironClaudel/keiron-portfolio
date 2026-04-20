@@ -24,9 +24,9 @@ export const translations = {
     aboutDesc: "Un perfil junior, pero con ganas de aprender.",
 
     aboutBodyOne:
-      "Conocimiento sólido en desarrollo backend, bases de datos y análisis de datos.",
+      "Sólido conocimiento en desarrollo backend, bases de datos y análisis de datos, estudiante activo del Bachillerato en Ingeniería en Sistemas Computacionales en la Universidad Fidélitas, con un 57% del plan de estudio completado.",
     aboutBodySecond:
-      "Mi enfoque principal está en el desarrollo backend con .NET, disfruto trabajar en lógica de negocio, diseño de endpoints, acceso a datos y organización del código para que sea fácil de mantener.",
+      "Mi enfoque se basa en el desarrollo backend con .NET, disfruto trabajar en lógica de negocio, diseño de endpoints, acceso a datos y organización del código para que sea fácil de mantener.",
     aboutBodyThird:
       "Dispuesto a aprender nuevas tecnologías para mejorar mi perfil laboral y cumplir con los objetivos que se propongan.",
 
@@ -95,11 +95,11 @@ export const translations = {
     aboutDesc: "A Junior profile eager to learn",
 
     aboutBodyOne:
-      "Solid knowledge in backend development, databases, and data analysis.",
+      "Solid knowledge in backend development, databases, and data analysis, currently an active student of the Bachelor's in Computer Systems Engineering at Universidad Fidélitas, with 57% of the degree completed through credit validation.",
     aboutBodySecond:
       "My primary focus is on backend development with .NET. I enjoy working on business logic, endpoint design, data access, and organizing code for maintainability.",
     aboutBodyThird:
-      "Willing to learn new technologies to improve my professional profile and meet the proposed objectives.",
+      "Willing to learn new technologies to improve my professional profile and meet the proposed objectives, currently learning about frontend development to expand my skill set.",
 
     skillsTitle: "Skills",
     skillsDesc: "Stack",
