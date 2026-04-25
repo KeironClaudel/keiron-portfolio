@@ -46,6 +46,14 @@ export const translations = {
       "Esto mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
     ],
 
+    projectInstantProforms: [
+      "Muchas empresas manejan proformas y cotizaciones en procesos dispersos, lo que complica el seguimiento, la personalización por empresa y la entrega rápida al cliente.",
+
+      "InstantProforms resuelve esta problemática con una plataforma que centraliza el onboarding de empresas, la gestión de branding, la creación de proformas y la generación de PDFs compartibles, con autenticación segura y enlaces públicos temporales.",
+
+      "Esto agiliza el proceso comercial, mejora la presentación profesional de cada proforma y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
+    ],
+
     projectBackend: "Backend",
     projectFrontend: "Frontend",
 
@@ -63,6 +71,8 @@ export const translations = {
     projectBackend: "Repo Backend",
     projectFrontend: "Repo Frontend",
     projectDemo: "Demo",
+    projectDemoPending: "Demo pendiente",
+    projectDemoUserPending: "[Pendiente agregar usuario de prueba]",
     demoAdmin: "Admin:",
     demoUser: "Usuario demo:",
     projectBackendStack: "Backend",
@@ -118,6 +128,14 @@ export const translations = {
       "This improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
     ],
 
+    projectInstantProforms: [
+      "Many companies handle proformas and quotations through scattered processes, which makes tracking, company-level branding, and fast customer delivery more difficult.",
+
+      "InstantProforms solves this with a platform that centralizes company onboarding, branding setup, proforma creation, and shareable PDF generation, backed by secure authentication and temporary public links.",
+
+      "This speeds up the sales workflow, improves the professional presentation of each proforma, and makes it easier to share, download, or email documents without relying on manual processes.",
+    ],
+
     projectBackend: "Backend",
     projectFrontend: "Frontend",
 
@@ -135,6 +153,8 @@ export const translations = {
     projectBackend: "Backend Repo",
     projectFrontend: "Frontend Repo",
     projectDemo: "Live Demo",
+    projectDemoPending: "Demo pending",
+    projectDemoUserPending: "[Pending demo user]",
     demoAdmin: "Admin:",
     demoUser: "Demo user:",
     projectBackendStack: "Backend",

@@ -95,11 +95,43 @@ export default function App() {
           ],
           deployment: [
             { name: "Render (Docker)", icon: <SiDocker /> },
+            { name: "Azure", icon: <HiOutlineCube /> },
             { name: "Vercel", icon: <HiOutlineCube /> },
           ],
         },
       },
-      // Next project would go here
+      {
+        title: "InstantProforms",
+        description: t.projectInstantProforms,
+        backendUrl: "https://github.com/KeironClaudel/InstantProformsAPI",
+        frontendUrl: "https://github.com/KeironClaudel/instantproforms-web",
+        liveUrl: "#",
+        showDemoPlaceholder: true,
+        demoCredentials: {
+          user: t.projectDemoUserPending,
+        },
+        technologies: {
+          backend: [
+            { name: ".NET 8", icon: <HiOutlineCube /> },
+            { name: "C#", icon: <TbBrandCSharp /> },
+            { name: "PostgreSQL", icon: <FaDatabase /> },
+            { name: "JWT", icon: <TbApi /> },
+            { name: "QuestPDF", icon: <HiOutlineCube /> },
+          ],
+          frontend: [
+            { name: "React 19", icon: <FaReact /> },
+            { name: "TypeScript", icon: <TbApi /> },
+            { name: "Vite", icon: <HiOutlineCube /> },
+            { name: "Tailwind", icon: <HiOutlineCube /> },
+            { name: "PWA", icon: <HiOutlineCube /> },
+          ],
+          deployment: [
+            { name: "Render (Docker)", icon: <SiDocker /> },
+            { name: "Vercel", icon: <SiVercel /> },
+            { name: "Supabase Storage", icon: <FaDatabase /> },
+          ],
+        },
+      },
     ],
     [lang],
   );
