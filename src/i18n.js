@@ -21,7 +21,8 @@ export const translations = {
       "Buscando crecer como desarrollador con proyectos sólidos y buenas bases técnicas.",
 
     aboutTitle: "Acerca de mi",
-    aboutDesc: "Un perfil junior, pero con ganas de aprender.",
+    aboutDesc:
+      "Perfil profesional orientado a mejorar constantemente y avanzar",
 
     aboutBodyOne:
       "Sólido conocimiento en desarrollo backend, bases de datos y análisis de datos, estudiante activo del Bachillerato en Ingeniería en Sistemas Computacionales en la Universidad Fidélitas, con un 57% del plan de estudio completado.",
@@ -103,7 +104,8 @@ export const translations = {
     statusDesc: "Looking to grow as a developer with solid projects.",
 
     aboutTitle: "About me",
-    aboutDesc: "A Junior profile eager to learn",
+    aboutDesc:
+      "Professional profile oriented towards constant improvement and growth",
 
     aboutBodyOne:
       "Solid knowledge in backend development, databases, and data analysis, currently an active student of the Bachelor's in Computer Systems Engineering at Universidad Fidélitas, with 57% of the degree completed through credit validation.",
