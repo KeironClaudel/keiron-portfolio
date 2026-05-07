@@ -13,9 +13,11 @@ export default function Projects({ projects, t }) {
 
       <div className="projects-grid">
         {projects.map((project) => {
-          const hasDemo =
-            project.demoCredentials || project.liveUrl || project.showDemoPlaceholder;
+          const hasDemoCredentials =
+            project.demoCredentials || project.showDemoPlaceholder;
           const hasLiveUrl = project.liveUrl && project.liveUrl !== "#";
+          const hasAccess = hasDemoCredentials || hasLiveUrl;
+          const liveLabel = project.liveLabel || t.projectDemo;
 
           return (
             <article key={project.title} className="card project-card">
@@ -120,15 +122,17 @@ export default function Projects({ projects, t }) {
                   )}
                 </div>
 
-                {hasDemo && (
+                {hasAccess && (
                   <div className="project-demo-box">
-                    <div className="project-demo-credentials">
-                      <span className="demo-label">{t.demoUser}</span>
-                      <span className="demo-value">
-                        {project.demoCredentials?.user ??
-                          "[Pending demo user]"}
-                      </span>
-                    </div>
+                    {hasDemoCredentials && (
+                      <div className="project-demo-credentials">
+                        <span className="demo-label">{t.demoUser}</span>
+                        <span className="demo-value">
+                          {project.demoCredentials?.user ??
+                            "[Pending demo user]"}
+                        </span>
+                      </div>
+                    )}
 
                     {hasLiveUrl ? (
                       <a
@@ -136,9 +140,9 @@ export default function Projects({ projects, t }) {
                         target="_blank"
                         rel="noreferrer"
                         className="project-demo-button"
-                        aria-label={`${t.projectDemo} - ${project.title}`}
+                        aria-label={`${liveLabel} - ${project.title}`}
                       >
-                        {t.projectDemo}
+                        {liveLabel}
                       </a>
                     ) : (
                       <span

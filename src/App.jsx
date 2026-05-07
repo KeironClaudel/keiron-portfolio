@@ -3,6 +3,7 @@ import Header from "./pages/Header";
 import Hero from "./pages/Hero";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Websites from "./pages/Websites";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
@@ -12,7 +13,13 @@ import BackToTop from "./pages/BackToTop";
 import { SiDotnet, SiGit } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { DiMsqlServer } from "react-icons/di";
-import { SiDocker, SiVercel } from "react-icons/si";
+import {
+  SiCloudflare,
+  SiDocker,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+} from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { TbApi } from "react-icons/tb";
@@ -136,6 +143,30 @@ export default function App() {
     [lang],
   );
 
+  const websites = useMemo(
+    () => [
+      {
+        title: "EcotechCR",
+        description: t.websiteEcotechCr,
+        liveUrl: "https://www.ecotech-cr.com",
+        liveLabel: t.projectWebsite,
+        technologies: {
+          frontend: [
+            { name: "React", icon: <FaReact /> },
+            { name: "Vite", icon: <HiOutlineCube /> },
+            { name: "TypeScript", icon: <SiTypescript /> },
+            { name: "Tailwind", icon: <SiTailwindcss /> },
+          ],
+          deployment: [
+            { name: "Vercel", icon: <SiVercel /> },
+            { name: "Cloudflare", icon: <SiCloudflare /> },
+          ],
+        },
+      },
+    ],
+    [lang],
+  );
+
   const skills = useMemo(
     () => [
       {
@@ -182,6 +213,7 @@ export default function App() {
         <About t={t} />
         <Skills skills={skills} t={t} />
         <Projects projects={projects} t={t} />
+        <Websites websites={websites} t={t} />
         <Contact t={t} />
       </main>
 

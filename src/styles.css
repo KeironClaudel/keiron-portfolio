@@ -759,6 +759,43 @@ button {
 }
 
 /* =========================
+   WEBSITES
+   ========================= */
+
+.websites-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.website-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.6rem 1.8rem;
+}
+
+.website-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.website-card-actions {
+  width: 320px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.website-tech-groups {
+  display: grid;
+  gap: 1rem;
+}
+
+/* =========================
    FOOTER
    ========================= */
 
@@ -987,6 +1024,15 @@ div {
 
   .project-card-actions {
     width: 100%;
+  }
+
+  .website-card {
+    flex-direction: column;
+  }
+
+  .website-card-actions {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .project-card p {

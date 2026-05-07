@@ -39,19 +39,19 @@ export const translations = {
     projectCardTitle: "Proyecto",
 
     projectCloudDocs: [
-      "Muchas empresas gestionan documentos de forma desorganizada, lo que dificulta el control de acceso, la trazabilidad de cambios y la seguridad de la información.",
-
-      "CloudDocs resuelve este problema mediante un sistema centralizado que permite almacenar, versionar y controlar documentos con autenticación JWT y permisos por roles, garantizando acceso seguro y auditable.",
-
-      "Esto mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
+      "Mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
     ],
 
     projectInstantProforms: [
-      "Muchas empresas manejan proformas y cotizaciones en procesos dispersos, lo que complica el seguimiento, la personalización por empresa y la entrega rápida al cliente.",
+      "Agiliza el proceso comercial, mejora la presentación profesional de cada proforma y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
+    ],
 
-      "InstantProforms resuelve esta problemática con una plataforma que centraliza el onboarding de empresas, la gestión de branding, la creación de proformas y la generación de PDFs compartibles, con autenticación segura y enlaces públicos temporales.",
-
-      "Esto agiliza el proceso comercial, mejora la presentación profesional de cada proforma y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
+    websiteTitle: "Websites",
+    websiteDesc:
+      "Sitios web que he diseñado y desarrollado para presencia digital de marca.",
+    websiteLabel: "Sitio web",
+    websiteEcotechCr: [
+      "SPA oficial desarrollada para la empresa EcotechCR con enfoque en presencia digital clara, moderna y profesional.",
     ],
 
     projectBackend: "Backend",
@@ -71,6 +71,7 @@ export const translations = {
     projectBackend: "Repo Backend",
     projectFrontend: "Repo Frontend",
     projectDemo: "Demo",
+    projectWebsite: "Sitio web",
     projectDemoPending: "Demo pendiente",
     projectDemoUserPending: "[Pendiente agregar usuario de prueba]",
     demoAdmin: "Admin:",
@@ -121,19 +122,19 @@ export const translations = {
     projectCardTitle: "Project",
 
     projectCloudDocs: [
-      "Many companies manage documents in a disorganized way, making it difficult to control access, track changes, and ensure data security.",
-
-      "CloudDocs solves this by providing a centralized system that allows document storage, versioning, and control using JWT authentication and role-based permissions, ensuring secure and auditable access.",
-
-      "This improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
+      "Improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
     ],
 
     projectInstantProforms: [
-      "Many companies handle proformas and quotations through scattered processes, which makes tracking, company-level branding, and fast customer delivery more difficult.",
+      "Speeds up the sales workflow, improves the professional presentation of each proforma, and makes it easier to share, download, or email documents without relying on manual processes.",
+    ],
 
-      "InstantProforms solves this with a platform that centralizes company onboarding, branding setup, proforma creation, and shareable PDF generation, backed by secure authentication and temporary public links.",
-
-      "This speeds up the sales workflow, improves the professional presentation of each proforma, and makes it easier to share, download, or email documents without relying on manual processes.",
+    websiteTitle: "Websites",
+    websiteDesc:
+      "Websites I designed and built for brand presence and business visibility.",
+    websiteLabel: "Website",
+    websiteEcotechCr: [
+      "Official SPA created for EcotechCR with a clear, modern, and professional digital presence in mind.",
     ],
 
     projectBackend: "Backend",
@@ -153,6 +154,7 @@ export const translations = {
     projectBackend: "Backend Repo",
     projectFrontend: "Frontend Repo",
     projectDemo: "Live Demo",
+    projectWebsite: "Website",
     projectDemoPending: "Demo pending",
     projectDemoUserPending: "[Pending demo user]",
     demoAdmin: "Admin:",
