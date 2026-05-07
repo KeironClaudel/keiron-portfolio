@@ -18,6 +18,7 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { TbApi } from "react-icons/tb";
 import { HiOutlineCube } from "react-icons/hi2";
 import { FaReact } from "react-icons/fa";
+import { Analytics } from '@vercel/analytics/react';
 
 function getInitialLanguage() {
   const savedLang = localStorage.getItem("lang");
@@ -187,6 +188,7 @@ export default function App() {
 
       <Footer />
       <BackToTop />
+      <Analytics />
     </div>
   );
 }
