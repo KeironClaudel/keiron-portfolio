@@ -56,7 +56,7 @@ export const translations = {
     websiteDesc: "SPAs y sitios web desarrollados",
     websiteLabel: "Página web",
     websiteEcotechCr: [
-      "SPA oficial creada para EcotechCR para presentar la empresa con una experiencia clara, moderna y profesional.",
+      "SPA oficial creada para EcotechCR, presentando la empresa con una experiencia clara, moderna y profesional.",
       "Disponible en www.ecotech-cr.com.",
     ],
 

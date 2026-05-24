@@ -1388,7 +1388,7 @@ div {
   }
 
   .website-card-preview {
-    min-height: 220px;
+    min-height: 0;
   }
 
   .hero-contact-links {
