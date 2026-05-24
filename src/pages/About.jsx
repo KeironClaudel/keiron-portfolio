@@ -6,10 +6,15 @@ export default function About({ t }) {
         <h2>{t.aboutDesc}</h2>
       </div>
 
-      <article className="card">
-        <p>{t.aboutBodyOne}</p>
-        <p>{t.aboutBodySecond}</p>
-        <p>{t.aboutBodyThird}</p>
+      <article className="card about-card">
+        <div className="about-accent-layout">
+          <span className="about-rail" aria-hidden="true" />
+
+          <div className="about-copy">
+            <span className="about-kicker">{t.aboutProfileLabel}</span>
+            <p className="about-summary">{t.aboutSummary}</p>
+          </div>
+        </div>
       </article>
     </section>
   );

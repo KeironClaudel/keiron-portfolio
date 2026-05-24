@@ -8,7 +8,7 @@ export const translations = {
     navLinkProjects: "Proyectos",
     navLinkContact: "Contacto",
 
-    heroTitle: "Desarrollador Backend",
+    heroTitle: "Desarrollador Backend en .NET",
     heroDesc:
       "Desarrollador enfocado en backend con .NET, SQL y Clean Architecture. Me interesa crear soluciones mantenibles, claras y bien estructuradas, con enfoque real en negocio.",
 
@@ -23,6 +23,9 @@ export const translations = {
     aboutTitle: "Acerca de mi",
     aboutDesc:
       "Perfil profesional orientado a mejorar constantemente y avanzar",
+    aboutProfileLabel: "Perfil",
+    aboutSummary:
+      "Desarrollador enfocado en backend con .NET, bases de datos y lógica de negocio, con una base sólida en análisis de datos y formación activa en Ingeniería en Sistemas Computacionales en la Universidad Fidélitas. Me interesa construir soluciones claras, mantenibles y útiles para negocio, mientras continúo ampliando mi perfil técnico con nuevas herramientas y aprendizaje constante.",
 
     aboutBodyOne:
       "Sólido conocimiento en desarrollo backend, bases de datos y análisis de datos, estudiante activo del Bachillerato en Ingeniería en Sistemas Computacionales en la Universidad Fidélitas, con un 57% del plan de estudio completado.",
@@ -38,6 +41,8 @@ export const translations = {
     projectDesc: "Algunos proyectos que he desarrollado:",
 
     projectCardTitle: "Proyecto",
+    projectCloudDocsTitle: "Sistema de gestión documental",
+    projectInstantProformsTitle: "Sistema de gestión de cotizaciones",
 
     projectCloudDocs: [
       "Mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
@@ -47,12 +52,12 @@ export const translations = {
       "Agiliza el proceso comercial, mejora la presentación profesional de cada proforma y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
     ],
 
-    websiteTitle: "Websites",
-    websiteDesc:
-      "Sitios web que he diseñado y desarrollado para presencia digital de marca.",
-    websiteLabel: "Sitio web",
+    websiteTitle: "Páginas web",
+    websiteDesc: "SPAs y sitios web desarrollados",
+    websiteLabel: "Página web",
     websiteEcotechCr: [
-      "SPA oficial desarrollada para la empresa EcotechCR con enfoque en presencia digital clara, moderna y profesional.",
+      "SPA oficial creada para EcotechCR para presentar la empresa con una experiencia clara, moderna y profesional.",
+      "Disponible en www.ecotech-cr.com.",
     ],
 
     projectBackend: "Backend",
@@ -69,8 +74,8 @@ export const translations = {
     cvSpanish: "CV en Español",
     cvEnglish: "CV en Inglés",
     projectLabel: "Proyecto",
-    projectBackend: "Repo Backend",
-    projectFrontend: "Repo Frontend",
+    projectBackend: "Backend",
+    projectFrontend: "Frontend",
     projectDemo: "Demo",
     projectWebsite: "Sitio web",
     projectDemoPending: "Demo pendiente",
@@ -91,7 +96,7 @@ export const translations = {
     navLinkProjects: "Projects",
     navLinkContact: "Contact",
 
-    heroTitle: "Backend Developer",
+    heroTitle: ".NET Backend Developer",
     heroDesc:
       "Backend-focused developer using .NET, SQL and Clean Architecture. I aim to build maintainable and well-structured solutions.",
 
@@ -106,6 +111,9 @@ export const translations = {
     aboutTitle: "About me",
     aboutDesc:
       "Professional profile oriented towards constant improvement and growth",
+    aboutProfileLabel: "Profile",
+    aboutSummary:
+      "Backend-focused developer working with .NET, databases, and business logic, with a solid foundation in data analysis and active studies in Computer Systems Engineering at Universidad Fidélitas. I aim to build clear, maintainable, and business-oriented solutions while continuing to expand my technical profile through constant learning and new tools.",
 
     aboutBodyOne:
       "Solid knowledge in backend development, databases, and data analysis, currently an active student of the Bachelor's in Computer Systems Engineering at Universidad Fidélitas, with 57% of the degree completed through credit validation.",
@@ -122,6 +130,8 @@ export const translations = {
     projectDesc: "Some personal projects I developed",
 
     projectCardTitle: "Project",
+    projectCloudDocsTitle: "Document Management System",
+    projectInstantProformsTitle: "Quotations Management System",
 
     projectCloudDocs: [
       "Improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
@@ -132,11 +142,11 @@ export const translations = {
     ],
 
     websiteTitle: "Websites",
-    websiteDesc:
-      "Websites I designed and built for brand presence and business visibility.",
+    websiteDesc: "SPAs and websites built",
     websiteLabel: "Website",
     websiteEcotechCr: [
-      "Official SPA created for EcotechCR with a clear, modern, and professional digital presence in mind.",
+      "Official SPA created for EcotechCR to present the company with a clear, modern, and professional experience.",
+      "Available at www.ecotech-cr.com.",
     ],
 
     projectBackend: "Backend",
@@ -153,8 +163,8 @@ export const translations = {
     cvSpanish: "Resume (Spanish)",
     cvEnglish: "Resume (English)",
     projectLabel: "Project",
-    projectBackend: "Backend Repo",
-    projectFrontend: "Frontend Repo",
+    projectBackend: "Backend",
+    projectFrontend: "Frontend",
     projectDemo: "Live Demo",
     projectWebsite: "Website",
     projectDemoPending: "Demo pending",

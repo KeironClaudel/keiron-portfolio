@@ -10,6 +10,7 @@ import Footer from "./pages/Footer";
 import { useState, useEffect } from "react";
 import { translations } from "./i18n";
 import BackToTop from "./pages/BackToTop";
+import ecotechPreview from "./assets/ecotechcr-preview.webp";
 import { SiDotnet, SiGit } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { DiMsqlServer } from "react-icons/di";
@@ -78,7 +79,7 @@ export default function App() {
   const projects = useMemo(
     () => [
       {
-        title: "CloudDocs API",
+        title: t.projectCloudDocsTitle,
         description: t.projectCloudDocs,
         backendUrl: "https://github.com/KeironClaudel/CloudDocs",
         frontendUrl: "https://github.com/KeironClaudel/clouddocs-frontend",
@@ -88,27 +89,19 @@ export default function App() {
         },
         technologies: {
           backend: [
-            { name: ".NET 8", icon: <HiOutlineCube /> },
-            { name: "C#", icon: <TbBrandCSharp /> },
-            { name: "Clean Architecture", icon: <HiOutlineCube /> },
+            { name: ".NET", icon: <HiOutlineCube /> },
             { name: "PostgreSQL", icon: <FaDatabase /> },
-            { name: "Git", icon: <SiGit /> },
-          ],
-          frontend: [
-            { name: "React", icon: <FaReact /> },
-            { name: "JavaScript", icon: <TbApi /> },
-            { name: "Tailwind", icon: <HiOutlineCube /> },
-            { name: "HTML5", icon: <HiOutlineCube /> },
-          ],
-          deployment: [
-            { name: "Render (Docker)", icon: <SiDocker /> },
             { name: "Azure", icon: <HiOutlineCube /> },
-            { name: "Vercel", icon: <HiOutlineCube /> },
+          ],
+          frontend: [{ name: "React", icon: <FaReact /> }],
+          deployment: [
+            { name: "Docker", icon: <SiDocker /> },
+            { name: "Vercel", icon: <SiVercel /> },
           ],
         },
       },
       {
-        title: "InstantProforms",
+        title: t.projectInstantProformsTitle,
         description: t.projectInstantProforms,
         backendUrl: "https://github.com/KeironClaudel/InstantProformsAPI",
         frontendUrl: "https://github.com/KeironClaudel/instantproforms-web",
@@ -119,23 +112,13 @@ export default function App() {
         },
         technologies: {
           backend: [
-            { name: ".NET 8", icon: <HiOutlineCube /> },
-            { name: "C#", icon: <TbBrandCSharp /> },
+            { name: ".NET", icon: <HiOutlineCube /> },
             { name: "PostgreSQL", icon: <FaDatabase /> },
-            { name: "JWT", icon: <TbApi /> },
-            { name: "QuestPDF", icon: <HiOutlineCube /> },
           ],
-          frontend: [
-            { name: "React 19", icon: <FaReact /> },
-            { name: "TypeScript", icon: <TbApi /> },
-            { name: "Vite", icon: <HiOutlineCube /> },
-            { name: "Tailwind", icon: <HiOutlineCube /> },
-            { name: "PWA", icon: <HiOutlineCube /> },
-          ],
+          frontend: [{ name: "React", icon: <FaReact /> }],
           deployment: [
-            { name: "Render (Docker)", icon: <SiDocker /> },
+            { name: "Docker", icon: <SiDocker /> },
             { name: "Vercel", icon: <SiVercel /> },
-            { name: "Supabase Storage", icon: <FaDatabase /> },
           ],
         },
       },
@@ -148,7 +131,9 @@ export default function App() {
       {
         title: "EcotechCR",
         description: t.websiteEcotechCr,
+        previewImage: ecotechPreview,
         liveUrl: "https://www.ecotech-cr.com",
+        websiteHrefLabel: "www.ecotech-cr.com",
         liveLabel: t.projectWebsite,
         technologies: {
           frontend: [
@@ -177,7 +162,6 @@ export default function App() {
           { name: "Entity Framework Core", icon: <FaDatabase /> },
           { name: "SQL Server / SQL", icon: <DiMsqlServer /> },
           { name: "REST APIs", icon: <TbApi /> },
-          { name: "Clean Architecture", icon: <HiOutlineCube /> },
         ],
       },
       {

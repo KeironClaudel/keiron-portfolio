@@ -3,6 +3,8 @@
  * Each project is displayed as a rectangular card with
  * description, technologies, repository links and demo access.
  */
+import { FaGithub } from "react-icons/fa";
+
 export default function Projects({ projects, t }) {
   return (
     <section id="projects" className="section">
@@ -18,6 +20,11 @@ export default function Projects({ projects, t }) {
           const hasLiveUrl = project.liveUrl && project.liveUrl !== "#";
           const hasAccess = hasDemoCredentials || hasLiveUrl;
           const liveLabel = project.liveLabel || t.projectDemo;
+          const techLine = [
+            ...(project.technologies?.backend ?? []),
+            ...(project.technologies?.frontend ?? []),
+            ...(project.technologies?.deployment ?? []),
+          ];
 
           return (
             <article key={project.title} className="card project-card">
@@ -33,95 +40,19 @@ export default function Projects({ projects, t }) {
                   <p>{project.description}</p>
                 )}
 
-                {project.technologies && (
-                  <div className="project-tech-groups">
-                    {project.technologies.backend?.length > 0 && (
-                      <div className="project-tech-group">
-                        <h4 className="tech-group-title">
-                          {t.projectBackendStack}
-                        </h4>
-
-                        <div className="project-tech-stack">
-                          {project.technologies.backend.map((tech, index) => (
-                            <div key={`backend-${index}`} className="tech-chip">
-                              <span className="tech-icon">{tech.icon}</span>
-                              <span>{tech.name}</span>
-                            </div>
-                          ))}
-                        </div>
+                {techLine.length > 0 && (
+                  <div className="project-tech-inline" aria-label="Technologies used">
+                    {techLine.map((tech, index) => (
+                      <div key={`${project.title}-tech-${index}`} className="tech-chip">
+                        <span className="tech-icon">{tech.icon}</span>
+                        <span>{tech.name}</span>
                       </div>
-                    )}
-
-                    {project.technologies.frontend?.length > 0 && (
-                      <div className="project-tech-group">
-                        <h4 className="tech-group-title">
-                          {t.projectFrontendStack}
-                        </h4>
-
-                        <div className="project-tech-stack">
-                          {project.technologies.frontend.map((tech, index) => (
-                            <div
-                              key={`frontend-${index}`}
-                              className="tech-chip"
-                            >
-                              <span className="tech-icon">{tech.icon}</span>
-                              <span>{tech.name}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {project.technologies.deployment?.length > 0 && (
-                      <div className="project-tech-group">
-                        <h4 className="tech-group-title">
-                          {t.projectDeploymentStack}
-                        </h4>
-
-                        <div className="project-tech-stack">
-                          {project.technologies.deployment.map(
-                            (tech, index) => (
-                              <div
-                                key={`deploy-${index}`}
-                                className="tech-chip"
-                              >
-                                <span className="tech-icon">{tech.icon}</span>
-                                <span>{tech.name}</span>
-                              </div>
-                            ),
-                          )}
-                        </div>
-                      </div>
-                    )}
+                    ))}
                   </div>
                 )}
               </div>
 
               <div className="project-card-actions">
-                <div className="project-links">
-                  {project.backendUrl && (
-                    <a
-                      href={project.backendUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`${t.projectBackend} - ${project.title}`}
-                    >
-                      {t.projectBackend}
-                    </a>
-                  )}
-
-                  {project.frontendUrl && (
-                    <a
-                      href={project.frontendUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`${t.projectFrontend} - ${project.title}`}
-                    >
-                      {t.projectFrontend}
-                    </a>
-                  )}
-                </div>
-
                 {hasAccess && (
                   <div className="project-demo-box">
                     {hasDemoCredentials && (
@@ -154,6 +85,36 @@ export default function Projects({ projects, t }) {
                     )}
                   </div>
                 )}
+
+                <div className="project-links">
+                  {project.backendUrl && (
+                    <a
+                      href={project.backendUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${t.projectBackend} - ${project.title}`}
+                    >
+                      <span className="repo-link-icon" aria-hidden="true">
+                        <FaGithub />
+                      </span>
+                      {t.projectBackend}
+                    </a>
+                  )}
+
+                  {project.frontendUrl && (
+                    <a
+                      href={project.frontendUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${t.projectFrontend} - ${project.title}`}
+                    >
+                      <span className="repo-link-icon" aria-hidden="true">
+                        <FaGithub />
+                      </span>
+                      {t.projectFrontend}
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           );
