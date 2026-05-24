@@ -20,7 +20,7 @@ export default function Hero({ t }) {
         </div>
 
         <div className="hero-main">
-          <p className="hero-title">{t.heroTitle}</p>
+          <p className="hero-role-label">{t.heroTitle}</p>
 
           <h1 className="hero-title hero-title-horizontal">
             Keiron Quesada Claudel
