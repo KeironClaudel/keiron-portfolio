@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import Header from "./pages/Header";
 import Hero from "./pages/Hero";
 import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Websites from "./pages/Websites";
 import About from "./pages/About";
@@ -26,6 +27,9 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { TbApi } from "react-icons/tb";
 import { HiOutlineCube } from "react-icons/hi2";
 import { FaReact } from "react-icons/fa";
+import { SiPython } from "react-icons/si";
+import { FiBarChart2 } from "react-icons/fi";
+import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 
 function getInitialLanguage() {
   const savedLang = localStorage.getItem("lang");
@@ -155,7 +159,7 @@ export default function App() {
   const skills = useMemo(
     () => [
       {
-        category: "Backend",
+        category: t.skillsCategoryBackend,
         items: [
           { name: ".NET / ASP.NET Core", icon: <HiOutlineCube /> },
           { name: "C#", icon: <TbBrandCSharp /> },
@@ -165,18 +169,46 @@ export default function App() {
         ],
       },
       {
-        category: "Frontend",
+        category: t.skillsCategoryFrontend,
         items: [{ name: "React", icon: <FaReact /> }],
       },
       {
-        category: "Tools",
+        category: t.skillsCategoryData,
+        items: [
+          { name: "Power BI", icon: <FiBarChart2 /> },
+          { name: "Excel", icon: <PiMicrosoftExcelLogoFill /> },
+          { name: "Python", icon: <SiPython /> },
+        ],
+      },
+      {
+        category: t.skillsCategoryTools,
         items: [
           { name: "Git / GitHub", icon: <SiGit /> },
-          { name: "Data Analysis", icon: <LuBrainCircuit /> },
+          { name: "Docker", icon: <SiDocker /> },
         ],
       },
     ],
-    [],
+    [t],
+  );
+
+  const experiences = useMemo(
+    () => [
+      {
+        company: t.experienceCompanyGmao,
+        role: t.experienceRoleGmao,
+        period: t.experiencePeriod2024,
+        location: t.experienceLocationCartago,
+        highlights: t.experienceHighlightsGmao,
+      },
+      {
+        company: t.experienceCompanyMuni,
+        role: t.experienceRoleMuni,
+        period: t.experiencePeriod2024,
+        location: t.experienceLocationCartago,
+        highlights: t.experienceHighlightsMuni,
+      },
+    ],
+    [t],
   );
 
   return (
@@ -195,6 +227,7 @@ export default function App() {
       <main className="container page-content">
         <Hero t={t} />
         <About t={t} />
+        <Experience experiences={experiences} t={t} />
         <Skills skills={skills} t={t} />
         <Projects projects={projects} t={t} />
         <Websites websites={websites} t={t} />

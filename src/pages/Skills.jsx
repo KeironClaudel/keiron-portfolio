@@ -1,8 +1,10 @@
 export default function Skills({ skills, t }) {
   return (
     <section id="skills" className="section">
-      <p className="section-label">{t.skills}</p>
-      <h2>{t.skillsTitle}</h2>
+      <div className="section-heading">
+        <span className="section-tag">{t.skillsTitle}</span>
+        <h2>{t.skillsDesc}</h2>
+      </div>
 
       <div className="skills-groups">
         {skills.map((group) => (

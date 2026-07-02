@@ -9,6 +9,7 @@ export default function Header({ theme, onToggleTheme, toggleLang, lang, t }) {
 
         <nav className="nav-links">
           <a href="#about">{t.navLinkAboutMe}</a>
+          <a href="#experience">{t.navLinkExperience}</a>
           <a href="#skills">{t.navLinkSkills}</a>
           <a href="#projects">{t.navLinkProjects}</a>
           <a href="#contact">{t.navLinkContact}</a>

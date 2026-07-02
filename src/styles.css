@@ -691,6 +691,55 @@ button {
 }
 
 /* =========================
+   EXPERIENCE
+   ========================= */
+
+.experience-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-card {
+  padding: 1.5rem 1.6rem;
+}
+
+.experience-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-card-header h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-points {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  display: grid;
+  gap: 0.6rem;
+  line-height: 1.75;
+}
+
+.experience-points li::marker {
+  color: var(--accent);
+}
+
+/* =========================
    SKILLS
    ========================= */
 
@@ -1240,6 +1289,15 @@ div {
 @media (max-width: 920px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-card-header {
+    flex-direction: column;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
+    white-space: normal;
   }
 
   .about-grid {
