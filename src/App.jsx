@@ -166,7 +166,7 @@ export default function App() {
       },
       {
         category: "Frontend",
-        items: [{ name: "React (Basic)", icon: <FaReact /> }],
+        items: [{ name: "React", icon: <FaReact /> }],
       },
       {
         category: "Tools",
