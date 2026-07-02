@@ -101,10 +101,10 @@ export default function App() {
         },
       },
       {
-        title: t.projectInstantProformsTitle,
-        description: t.projectInstantProforms,
-        backendUrl: "https://github.com/KeironClaudel/InstantProformsAPI",
-        frontendUrl: "https://github.com/KeironClaudel/instantproforms-web",
+        title: t.projectInstantQuotationsTitle,
+        description: t.projectInstantQuotations,
+        backendUrl: "https://github.com/KeironClaudel/InstantQuotationsAPI",
+        frontendUrl: "https://github.com/KeironClaudel/instantquotations-web",
         liveUrl: "#",
         showDemoPlaceholder: true,
         demoCredentials: {

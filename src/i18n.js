@@ -131,14 +131,14 @@ export const translations = {
 
     projectCardTitle: "Project",
     projectCloudDocsTitle: "Document Management System",
-    projectInstantProformsTitle: "Quotations Management System",
+    projectInstantQuotationsTitle: "Quotations Management System",
 
     projectCloudDocs: [
       "Improves internal organization, reduces paper usage, minimizes human errors, and streamlines document management in business environments.",
     ],
 
-    projectInstantProforms: [
-      "Speeds up the sales workflow, improves the professional presentation of each proforma, and makes it easier to share, download, or email documents without relying on manual processes.",
+    projectInstantQuotations: [
+      "Speeds up the sales workflow, improves the professional presentation of each quotation, and makes it easier to share, download, or email documents without relying on manual processes.",
     ],
 
     websiteTitle: "Websites",
