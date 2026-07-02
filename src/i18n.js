@@ -21,7 +21,7 @@ export const translations = {
     statusDesc:
       "Buscando crecer como desarrollador con proyectos sólidos y buenas bases técnicas.",
 
-    aboutTitle: "Acerca de mi",
+    aboutTitle: "Acerca de mí",
     aboutDesc:
       "Perfil profesional orientado a mejorar constantemente y avanzar",
     aboutProfileLabel: "Perfil",
