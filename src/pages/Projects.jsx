@@ -41,9 +41,15 @@ export default function Projects({ projects, t }) {
                 )}
 
                 {techLine.length > 0 && (
-                  <div className="project-tech-inline" aria-label="Technologies used">
+                  <div
+                    className="project-tech-inline"
+                    aria-label="Technologies used"
+                  >
                     {techLine.map((tech, index) => (
-                      <div key={`${project.title}-tech-${index}`} className="tech-chip">
+                      <div
+                        key={`${project.title}-tech-${index}`}
+                        className="tech-chip"
+                      >
                         <span className="tech-icon">{tech.icon}</span>
                         <span>{tech.name}</span>
                       </div>
@@ -76,11 +82,8 @@ export default function Projects({ projects, t }) {
                         {liveLabel}
                       </a>
                     ) : (
-                      <span
-                        className="project-demo-button project-demo-button-disabled"
-                        aria-label={`${t.projectDemoPending} - ${project.title}`}
-                      >
-                        {t.projectDemoPending}
+                      <span className="project-demo-button disabled">
+                        {liveLabel}
                       </span>
                     )}
                   </div>
