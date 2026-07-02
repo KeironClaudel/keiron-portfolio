@@ -144,7 +144,7 @@ export const translations = {
       "Relevant professional experience in development and system optimization.",
     experienceCompanyGmao: "GMAOLinx Central America",
     experienceRoleGmao: "Backend Web Developer (Internship)",
-    experienceCompanyMuni: "Municipality of Cartago",
+    experienceCompanyMuni: "Municipalidad de Cartago",
     experienceRoleMuni: "Full-Stack Web Developer (Supervised Practice)",
     experiencePeriod2024: "2024",
     experienceLocationCartago: "Cartago, Costa Rica",
