@@ -42,14 +42,14 @@ export const translations = {
 
     projectCardTitle: "Proyecto",
     projectCloudDocsTitle: "Sistema de gestión documental",
-    projectInstantProformsTitle: "Sistema de gestión de cotizaciones",
+    projectInstantQuotationsTitle: "Sistema de gestión de cotizaciones",
 
     projectCloudDocs: [
       "Mejora la organización interna, reduciendo el uso del papel, también reduce errores humanos y facilita la gestión documental en entornos empresariales.",
     ],
 
-    projectInstantProforms: [
-      "Agiliza el proceso comercial, mejora la presentación profesional de cada proforma y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
+    projectInstantQuotations: [
+      "Agiliza el proceso comercial, mejora la presentación profesional de cada cotización y facilita compartir, descargar o enviar documentos sin depender de flujos manuales.",
     ],
 
     websiteTitle: "Páginas web",
