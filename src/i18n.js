@@ -196,7 +196,6 @@ export const translations = {
     downloadCv: "Download resume",
     cvSpanish: "Resume (Spanish)",
     cvEnglish: "Resume (English)",
-    projectLabel: "Project",
     projectBackend: "Backend",
     projectFrontend: "Frontend",
     projectDemo: "Live Demo",
