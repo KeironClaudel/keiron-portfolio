@@ -55,7 +55,7 @@ export default function Hero({ t }) {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedinIcon size={16} /> LinkdIn
+              <LinkedinIcon size={16} /> LinkedIn
             </a>
             <a href="mailto:keironqc@gmail.com">
               <MailIcon size={16} /> Gmail
