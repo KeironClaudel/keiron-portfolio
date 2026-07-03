@@ -1197,6 +1197,12 @@ button {
 .website-card-footer {
   display: flex;
   align-items: flex-end;
+  width: 100%;
+}
+
+.website-card-footer .project-demo-button {
+  width: 100%;
+  text-align: center;
 }
 
 /* =========================
@@ -1526,10 +1532,22 @@ div {
     order: 3;
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 0.95rem;
+    justify-content: flex-start;
+    gap: 0.95rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.1rem 0 0.25rem;
+    font-size: 0.92rem;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
   }
 
   .hero-title-horizontal {
@@ -1557,6 +1575,7 @@ div {
 
   .hero-contact-links {
     gap: 0.6rem;
+    justify-content: center;
   }
 
   .hero-contact-links a {
@@ -1573,6 +1592,7 @@ div {
 
   .cv-dropdown {
     width: 100%;
+    flex-basis: 100%;
   }
 
   .cv-toggle {
@@ -1627,5 +1647,6 @@ div {
 
   .hero-contact-links {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
