@@ -759,15 +759,19 @@ button {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem 3rem;
 }
 
 .skill-card {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  flex: 0 0 auto;
+  min-width: 0;
 }
 
 .skill-icon {
